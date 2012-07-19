@@ -8,8 +8,8 @@ simple switcher classes for blocks
 TODO radio|checkbox
  
 options:
-  childrenSelector:String // '> *'
-  activeClass:String // '.active'
-  selectCallback:Function // null
+childrenSelector:String // '> *'
+activeClass:String // '.active'
+selectCallback:Function // null
 
 see example.html
