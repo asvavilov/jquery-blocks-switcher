@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>switcher example</title>
+	<style>
+		.names li {height: 50px; margin: 5px; background-color: #777;}
+		.names li.click {background-color: #ccc;}
+		.names .popup {display: none;}
+		.click .popup {display: block;}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="switcher.js"></script>
+	<script>
+	$(function(){
+		$('#names').switcher({
+			childrenSelector: 'li.item',
+			activeClass: 'click',
+			selectCallback: function(previous_child, current_child){
+				$(current_child).find(':radio').attr('checked', true);
+			}
+		});
+	});
+	</script>
+</head>
+<body><div>
+
+<ul id="names" class="names">
+	<li class="item click">
+		<input type="radio" name="item" value="1" checked>&nbsp;joe
+		<div class="popup">
+			<div class="returninfo">about joe</div>
+		</div>
+	</li>
+	<li class="item">
+		<input type="radio" name="item" value="2">&nbsp;michael
+		<div class="popup">
+			<div class="returninfo">about michael</div>
+		</div>
+	</li>
+	<li class="item">
+		<input type="radio" name="item" value="3">&nbsp;glenn
+		<div class="popup">
+			<div class="returninfo">about glenn</div>
+		</div>
+	</li>
+</ul>
+
+</div></body></html>
