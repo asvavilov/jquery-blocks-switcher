@@ -5,6 +5,13 @@ simple switcher classes for blocks, plugin for jquery
 
 work's with dynamicaly added children
 
+options:
+* childrenSelector:String // '.item'
+* activeClass:String // 'active'
+*	selectCallback:Function // null
+
+see example.html
+
 TODO radio|checkbox
 
 Changelog:
@@ -12,10 +19,3 @@ Changelog:
   * Support for dynamicaly added children
 * 1.0 (20120720)
   * First version
-
-options:
-* childrenSelector:String // '.item'
-*	activeClass:String // 'active'
-*	selectCallback:Function // null
-
-see example.html
