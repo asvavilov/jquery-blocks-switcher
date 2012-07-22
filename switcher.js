@@ -2,7 +2,7 @@
  * author: Alexander Vavilov (asvavilov)
  * www: yasla.net
  * 
- * simple switcher classes for blocks click
+ * simple switcher classes for blocks on click
  * work's with dynamicaly added children
  * plugin for jquery
  * 
