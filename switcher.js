@@ -2,8 +2,9 @@
  * author: Alexander Vavilov (asvavilov)
  * www: yasla.net
  * 
- * simple switcher classes for blocks, plugin for jquery
+ * simple switcher classes for blocks click
  * work's with dynamicaly added children
+ * plugin for jquery
  * 
  * options:
  * 	childrenSelector:String // '.item'
