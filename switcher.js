@@ -2,6 +2,9 @@
  * author: Alexander Vavilov (asvavilov)
  * www: yasla.net
  * 
+ * simple switcher classes for blocks, plugin for jquery
+ * work's with dynamicaly added children
+ * 
  * TODO radio|checkbox
  * 
  * Changelog:
@@ -15,6 +18,7 @@
  * 	activeClass:String // 'active'
  * 	selectCallback:Function // null
  */
+ 
 (function($){  
 	$.fn.switcher = function(options){  
 		var defaults = {
