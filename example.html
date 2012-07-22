@@ -16,7 +16,7 @@
 	}
 	$(function(){
 		$('#names').switcher({
-			//childrenSelector: 'li.item',
+			childrenSelector: 'li.item',
 			activeClass: 'click',
 			selectCallback: function(previous_child, current_child){
 				$(current_child).find(':radio').attr('checked', true);
