@@ -1,9 +1,11 @@
 jquery-blocks-switcher
 ======================
 
-simple switcher classes for blocks, plugin for jquery
+simple switcher classes for blocks on click
 
 work's with dynamicaly added children
+
+plugin for jquery
 
 options:
 * childrenSelector:String // '.item'
