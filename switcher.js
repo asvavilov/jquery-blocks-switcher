@@ -1,28 +1,32 @@
 /**
  * author: Alexander Vavilov (asvavilov)
  * www: yasla.net
- * ver: 1.0 (20120720)
  * 
  * TODO radio|checkbox
  * 
+ * Changelog:
+ * * 1.1 (20120722)
+ * * * Support for dynamicaly added children
+ * * 1.0 (20120720)
+ * * * First version
+ * 
  * options:
- * 	childrenSelector:String
- * 	activeClass:String
- * 	selectCallback:Function
+ * 	childrenSelector:String // '.item'
+ * 	activeClass:String // 'active'
+ * 	selectCallback:Function // null
  */
 (function($){  
 	$.fn.switcher = function(options){  
 		var defaults = {
-			childrenSelector: '> *',
+			childrenSelector: '.item',
 			activeClass: 'active',
 			selectCallback: null
 		};
 		var options = $.extend(defaults, options);
 		return this.each(function(){
 			var group = $(this);
-			var children = group.find(options.childrenSelector);
-			var current_active = children.filter('.'+options.activeClass);
-			children.on('click', function(event){
+			var current_active = group.find(options.childrenSelector).filter('.'+options.activeClass);
+			group.on('click', options.childrenSelector, function(event){
 				if (!current_active.is(this)) {
 					current_active.removeClass(options.activeClass);
 					var new_active = $(this);

@@ -11,9 +11,12 @@
 	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="switcher.js"></script>
 	<script>
+	function add() {
+		$('#names').append('<li class="item"><input type="radio" name="item" value="...">&nbsp;...<div class="popup">	<div class="returninfo">about ...</div></div></li>');
+	}
 	$(function(){
 		$('#names').switcher({
-			childrenSelector: 'li.item',
+			//childrenSelector: 'li.item',
 			activeClass: 'click',
 			selectCallback: function(previous_child, current_child){
 				$(current_child).find(':radio').attr('checked', true);
@@ -44,5 +47,6 @@
 		</div>
 	</li>
 </ul>
+<a href="#" onclick="add(); return false;">add</a>
 
 </div></body></html>
