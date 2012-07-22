@@ -3,7 +3,7 @@ jquery-blocks-switcher
 
 simple switcher classes for blocks on click
 
-work's with dynamicaly added children
+works with dynamicaly added children
 
 plugin for jquery
 
